@@ -9,21 +9,17 @@ mshta vbscript:createobject("shell.application").shellexecute("%~s0","goto :Admi
 :Admin
 
 ::1. install mysql
-::e:
-::cd mysql\mysql-5.6.17-winx64
-::mysqld install
-::net start mysql
+e:
+cd mysql\mysql-5.7.16-winx64\bin
+.\mysqld install
+net start mysql
 
 :: 2. install xshell
-::è®¾ç½®æ–‡ä»¶è·¯å¾„
-@echo off
-set Program=D:\install_package\ha_Xshell_25206\Xshell+Xftp\Xshell.exe
+::ÉèÖÃÎÄ¼şÂ·¾¶
+set Program=D:\git-workspace\nsis\soft\ha_Xshell_25206\Xshell+Xftp\Xshell.exe
  
-::è®¾ç½®å¿«æ·æ–¹å¼åç§°
+::ÉèÖÃ¿ì½İ·½Ê½Ãû³Æ
 set LnkName=Xshell
- 
-::è®¾ç½®å¿«æ·æ–¹å¼çš„å¤‡æ³¨
-set Desc=æµ‹è¯•
  
 (echo Set WshShell=CreateObject("WScript.Shell"^)
 echo strDesKtop=WshShell.SpecialFolders("DesKtop"^)
@@ -31,12 +27,14 @@ echo Set oShellLink=WshShell.CreateShortcut(strDesKtop^&"\%LnkName%.lnk"^)
 echo oShellLink.TargetPath="%Program%"
  
 echo oShellLink.WindowStyle=1
-echo oShellLink.Description="%Desc%"
 echo oShellLink.Save)>makelnk.vbs
  
-echo æ¡Œé¢å¿«æ·æ–¹å¼åˆ›å»ºæˆåŠŸ
+echo xshell´´½¨³É¹¦
 makelnk.vbs
 del /f /q makelnk.vbs
-::exit
+
+:: 3. install navicat
+echo start install navicat
+D:\git-workspace\nsis\soft\navicat150_premium_cs_x64.exe
 
 pause

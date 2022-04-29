@@ -9,12 +9,14 @@ mshta vbscript:createobject("shell.application").shellexecute("%~s0","goto :Admi
 :Admin
 
 ::1.remove mysql
-::e:
-::cd mysql\mysql-5.6.17-winx64\bin
-::net stop mysql
-::mysqld --remove mysql
+e:
+cd mysql\mysql-5.7.16-winx64\bin
+net stop mysql
+.\mysqld --remove mysql
 
 :: 2. remove xshell
 del /q %userprofile%\Desktop\xshell*.lnk
+echo xshellÒÆ³ý³É¹¦
+
 ::exit
 pause
