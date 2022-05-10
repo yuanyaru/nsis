@@ -8,15 +8,21 @@ mshta vbscript:createobject("shell.application").shellexecute("%~s0","goto :Admi
 
 :Admin
 
+set mysql=d:
+
 ::1.remove mysql
-e:
-cd mysql\mysql-5.7.16-winx64\bin
+%mysql%
+cd d:\\nsis\\soft\\mysql\\mysql-5.7.16-winx64\\bin
 net stop mysql
 .\mysqld --remove mysql
 
 :: 2. remove xshell
 del /q %userprofile%\Desktop\xshell*.lnk
 echo xshell移除成功
+
+:: 3. remove tomcat
+del /q %userprofile%\Desktop\tomcat*.lnk
+echo tomcat移除成功
 
 ::exit
 pause
