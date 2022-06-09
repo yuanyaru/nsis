@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9473734f-3ae9-4bab-909e-f4e5ecb7ed21" name="Default Changelist" comment="" />
+    <list default="true" id="9473734f-3ae9-4bab-909e-f4e5ecb7ed21" name="Default Changelist" comment="add ignore">
+      <change beforePath="$PROJECT_DIR$/.idea/nsis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nsis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynas.bat" beforeDir="false" afterPath="$PROJECT_DIR$/dynas.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/undynas.bat" beforeDir="false" afterPath="$PROJECT_DIR$/undynas.bat" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,7 +32,36 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="modifySqlPas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nsis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modifySqlPas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.modifySqlPas" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -45,20 +86,91 @@
       <option name="presentableId" value="Default" />
       <updated>1651213075216</updated>
       <workItem from="1651213076492" duration="81000" />
+      <workItem from="1651213800411" duration="144000" />
+      <workItem from="1651714239644" duration="21000" />
+      <workItem from="1651726506285" duration="653000" />
+      <workItem from="1651727241106" duration="5957000" />
+      <workItem from="1651815688988" duration="4975000" />
+      <workItem from="1652055708158" duration="3188000" />
+      <workItem from="1652059203326" duration="7831000" />
+      <workItem from="1652067568219" duration="4055000" />
+      <workItem from="1652076807096" duration="7271000" />
+      <workItem from="1652145530951" duration="1307000" />
+      <workItem from="1652148919287" duration="2519000" />
+      <workItem from="1653531642446" duration="696000" />
+      <workItem from="1654755888638" duration="1280000" />
     </task>
+    <task id="LOCAL-00001" summary="add ignore">
+      <created>1652149161937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652149161937</updated>
+    </task>
+    <task id="LOCAL-00002" summary="modify mysql password">
+      <created>1652150561901</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652150561901</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add ignore" />
+    <MESSAGE value="modify mysql password" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify mysql password" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="371" y="39" key="FileChooserDialogImpl" timestamp="1651213137853">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2409" y="46" key="CommitChangelistDialog2" timestamp="1654757239797">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="371" y="39" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1651213137853" />
-    <state x="26" y="0" key="SettingsEditor" timestamp="1651213145468">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2409" y="46" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1654757239797" />
+    <state x="2477" y="60" key="FileChooserDialogImpl" timestamp="1652160177567">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="26" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1651213145468" />
+    <state x="371" y="39" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1651714258427" />
+    <state x="2477" y="60" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652160177567" />
+    <state width="1867" height="172" key="GridCell.Tab.0.bottom" timestamp="1652146848307">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="172" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652146848307" />
+    <state width="1867" height="172" key="GridCell.Tab.0.center" timestamp="1652146848307">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="172" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652146848307" />
+    <state width="1867" height="172" key="GridCell.Tab.0.left" timestamp="1652146848307">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="172" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652146848307" />
+    <state width="1867" height="172" key="GridCell.Tab.0.right" timestamp="1652146848307">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="172" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652146848307" />
+    <state x="1959" y="0" key="SettingsEditor" timestamp="1652079126107">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="26" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1651213934685" />
+    <state x="1959" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652079126107" />
+    <state x="2372" y="188" key="Vcs.Push.Dialog.v2" timestamp="1652160149710">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2372" y="188" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652160149710" />
+    <state x="2306" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1652148920818">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="257" y="124" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1651714240571" />
+    <state x="2306" y="190" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652148920818" />
+    <state x="2723" y="192" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1654757098589">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2723" y="192" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1654757098589" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/nsis$modifySqlPas.coverage" NAME="modifySqlPas Coverage Results" MODIFIED="1652146675435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
