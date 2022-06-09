@@ -1,25 +1,41 @@
-@ echo off
+@echo off
+set file=dynas.ini
 
 :: 配置软件路径
-set mysql=d:
-set mdfmysql=D:\nsis\soft\modifySqlPas.exe
-set Xshell=D:\nsis\soft\ha_Xshell_25206\Xshell+Xftp\Xshell.exe
-set navicat=D:\nsis\soft\navicat150_premium_cs_x64.exe
-set jdk=D:\nsis\soft\jdk-8u66-windows-x64.exe
-set tomcat=D:\nsis\soft\apache-tomcat-8.0.35\bin\startup.bat
-set sunClient=D:\nsis\soft\SunloginClient_12.5.1.45098_x64.exe
+:: mysql 
+call:readini %file% mysql mysql mysql
+call:readini %file% mysql mdfmysql mdfmysql
+call:readini %file% mysql MYSQL_HOME MYSQL_HOME
+
+:: xshell
+call:readini %file% xshell xshell xshell
+
+:: jdk
+call:readini %file% jdk jdk jdk
+call:readini %file% jdk JAVA_HOME JAVA_HOME
+
+:: navicat
+call:readini %file% navicat navicat navicat
+
+:: tomcat
+call:readini %file% tomcat tomcat tomcat
+call:readini %file% tomcat CATALINA_HOME CATALINA_HOME
+
+:: sunClient
+call:readini %file% sunClient sunClient sunClient
+
 
 :: 配置环境变量
-setx MYSQL_HOME D:\nsis\soft\mysql\mysql-5.7.16-winx64
-setx JAVA_HOME D:\java\jdk1.8
-setx CATALINA_HOME D:\nsis\soft\apache-tomcat-8.0.35
+setx MYSQL_HOME %MYSQL_HOME%
+setx JAVA_HOME %JAVA_HOME%
+setx CATALINA_HOME %CATALINA_HOME%
 
 setx /m CLASSPATH .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
 setx /m Path "%Path%;%MYSQL_HOME%\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;%CATALINA_HOME%\bin"
 
 ::1. install mysql
 %mysql%
-cd d:\nsis\\soft\\mysql\\mysql-5.7.16-winx64\\bin
+cd %MYSQL_HOME%\bin
 .\mysqld install
 net start mysql
 ::set password
@@ -27,7 +43,7 @@ net start mysql
 
 :: 2. install xshell
 ::设置文件路径
-set Program=%Xshell%
+set Program=%xshell%
  
 ::设置快捷方式名称
 set LnkName=Xshell
@@ -76,3 +92,32 @@ echo start install sunClient
 %sunClient%
 
 pause
+
+:: 读取ini配置. %~1:文件名，%~2:域，%~3:key %~4:返回的value值
+:readini 
+@setlocal enableextensions enabledelayedexpansion
+@echo off
+set file=%~1
+set area=[%~2]
+set key=%~3
+set currarea=
+for /f "usebackq delims=" %%a in ("!file!") do (
+    set ln=%%a
+    if "x!ln:~0,1!"=="x[" (
+        set currarea=!ln!
+    ) else (
+        for /f "tokens=1,2 delims==" %%b in ("!ln!") do (
+            set currkey=%%b
+            set currval=%%c
+            if "x!area!"=="x!currarea!" (
+                if "x!key!"=="x!currkey!" (
+                    set var=!currval!
+                )
+            )
+        )
+    )
+)
+(endlocal
+    set "%~4=%var%"
+)
+goto:eof
