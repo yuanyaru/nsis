@@ -1,14 +1,6 @@
 @echo off
 set file=dynas.ini
 
-%1 %2
-
-ver|find "5.">nul&&goto :Admin
-
-mshta vbscript:createobject("shell.application").shellexecute("%~s0","goto :Admin","","runas",1)(window.close)&goto :eof
-
-:Admin
-
 :: ≈‰÷√»Ìº˛¬∑æ∂
 :: mysql 
 call:readini %file% mysql mysql mysql

@@ -33,12 +33,16 @@ setx CATALINA_HOME %CATALINA_HOME%
 setx /m CLASSPATH .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
 setx /m Path "%Path%;%MYSQL_HOME%\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;%CATALINA_HOME%\bin"
 
+
 ::1. install mysql
 %mysql%
+mkdir java\jdk1.8
+mkdir java\jre
 cd %MYSQL_HOME%\bin
 .\mysqld install
 net start mysql
 ::set password
+cd %mysql%\nsis\soft
 %mdfmysql%
 
 :: 2. install xshell
